@@ -17,17 +17,17 @@ def is_valid_ip(ip):
     return re.match(ip_pattern, ip) is not None
 
 # Bot information
-API_ID = environ.get('API_ID', '166810479')
+API_ID = environ.get('API_ID', '23709433')
 if len(API_ID) == 0:
     print('Error - API_ID is missing, exiting now')
     exit()
 else:
     API_ID = int(API_ID)
-API_HASH = environ.get('API_HASH', '161b61f5a06dd299a3d88a3384')
+API_HASH = environ.get('API_HASH', '862baac6f1ba7b3c090ca5f86ef55f7c')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '6307615113:AAGwQS8yxDrMxvLGTBR50PCut8vqUgt2WdM')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6755707899:AAGa-Vd7zOyG0ZBG_zf_Lqq6Rwdvf7Z-qGE')
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
@@ -37,7 +37,7 @@ PORT = int(environ.get('PORT', '80'))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/58fef5cb458d5b29b0186.jpg https://telegra.ph/file/f0aa4f433132769f8970c.jpg https://telegra.ph/file/f515fbc2084592eca60a5.jpg https://telegra.ph/file/20dbdcffaa89bd3d09a74.jpg https://telegra.ph/file/6045ba953af4def846238.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '6645678')
+ADMINS = environ.get('ADMINS', '5898561883')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -72,11 +72,11 @@ if len(OPENAI_API) == 0:
     print('Info - OPENAI_API is empty')
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://deendayaldhaked9:6PFNcPY4ckT7FFQp@cluster0.z536xun.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://Cartoon1:Cartoon1@cartoon1.wx9ipj4.mongodb.net/?retryWrites=true&w=majority")
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Cartoon1")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 
 # Links
@@ -93,8 +93,8 @@ MAX_BTN = int(environ.get('MAX_BTN', 10))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "ziplinker.net")
-SHORTLINK_API = environ.get("SHORTLINK_API", "4859713bcbf09f6fca6de13b5f88bbf29ea5ea6c")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "shareus.io")
+SHORTLINK_API = environ.get("SHORTLINK_API", "Mh0BT9fNWNSFLWRc1wbERAfBsXU2&link")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
